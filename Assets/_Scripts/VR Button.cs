@@ -14,6 +14,7 @@ public class VRButton : MonoBehaviour
         if(other.tag == "Button" && !_deadTimeActive)
         {
             onPressed?.Invoke();
+            other.GetComponent<Renderer>().material.color = new Color(0, 255, 0);
             Debug.Log("Button pressed");
         }
     }
@@ -24,6 +25,7 @@ public class VRButton : MonoBehaviour
         {
             onReleased?.Invoke();
             Debug.Log("Button released");
+            other.GetComponent<Renderer>().material.color = new Color(255, 0, 0);
             StartCoroutine(WaitForDeadTime());
         }
     }
