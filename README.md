@@ -26,7 +26,7 @@ The ghost and hand are created using prefabs from the theme assets. The hand has
 
 
 ### Teleport to enclosed graveyard
-The message from the ghost tells the user to find the 
+The message from the ghost tells the user to find the book of evil. Hint... it's sitting on the book stand inside the enclosed graveyard with no entrance.
 
 #### How it works:
 The locomotion system also has a child object called Teleportation Provider that holds the teleportation provider component and uses the right hand grip button to move to wherever the reticle is pointed. 
